@@ -127,4 +127,3 @@ export default function AllHousesPage(): React.JSX.Element {
   );
 }
 
-export { cottages }; 
