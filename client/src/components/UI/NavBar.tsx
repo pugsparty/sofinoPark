@@ -37,12 +37,15 @@ export default function NavBar(): React.JSX.Element {
 
           <Typography
             variant="h4"
+            component={Link}
+            to="/"
             sx={{
               fontWeight: 'bold',
               color: '#6e1c3a',
               fontSize: '48px',
               textTransform: 'uppercase',
               letterSpacing: '0.1em',
+              textDecoration: 'none',
             }}
           >
             «Софьино Парк»
