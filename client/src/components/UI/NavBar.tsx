@@ -20,7 +20,7 @@ export default function NavBar(): React.JSX.Element {
     <Box sx={{ flexGrow: 1, borderBottom: '1px solid #ddd' }}>
       <AppBar position="static" elevation={0} sx={{ backgroundColor: 'white', color: '#4a4a4a' }}>
         <Toolbar sx={{ justifyContent: 'center', gap: '10vw', padding: '10px 40px' }}>
-          <div style={{ textAlign: 'left' }}>
+          <div style={{ textAlign: 'left', minWidth: '4wh' }}>
             <Typography
               variant="body1"
               sx={{ color: '#6e1c3a', fontSize: '16px', fontWeight: 'bold' }}
@@ -34,6 +34,7 @@ export default function NavBar(): React.JSX.Element {
               идеальный дом вашей мечты!
             </Typography>
           </div>
+          
 
           <Typography
             variant="h4"
@@ -51,7 +52,7 @@ export default function NavBar(): React.JSX.Element {
             «Софьино Парк»
           </Typography>
 
-          <Box sx={{ textAlign: 'right' }}>
+          <Box sx={{ textAlign: 'right', minWidth: '4wh' }}>
             <Typography
               variant="body1"
               sx={{ color: '#6e1c3a', fontSize: '16px', fontWeight: 'bold' }}
