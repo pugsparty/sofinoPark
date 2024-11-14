@@ -10,6 +10,10 @@ export default function ContactsPage(): React.JSX.Element {
         <h1 className="contacts">КОНТАКТЫ:</h1>
         <h2 className="phone">+7 (915) 141-97-77</h2>
         <h2 className="email">SOFINOPARK@YANDEX.RU</h2>
+        <h2 className="description">
+          Свяжитесь с нами, чтобы узнать все преимущества жизни в наших уютных коттеджах! Более 500
+          довольных клиентов уже выбрали нас!
+        </h2>
       </div>
 
       <div className="form">
