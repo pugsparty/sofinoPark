@@ -3,20 +3,26 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('Words', {
+    await queryInterface.createTable('Houses', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER,
       },
-      original: {
-        allowNull: false,
+      name: {
         type: Sequelize.STRING,
-        unique: true,
       },
-      translation: {
-        allowNull: false,
+      cost: {
+        type: Sequelize.INTEGER,
+      },
+      area: {
+        type: Sequelize.INTEGER,
+      },
+      adress: {
+        type: Sequelize.STRING,
+      },
+      description: {
         type: Sequelize.STRING,
       },
       createdAt: {
@@ -31,7 +37,7 @@ module.exports = {
       },
     });
   },
-  async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable('Words');
+  async down(queryInterface) {
+    await queryInterface.dropTable('Houses');
   },
 };
