@@ -1,15 +1,13 @@
 const express = require('express');
 const morgan = require('morgan');
-const swaggerUi = require('swagger-ui-express');
-const swaggerJson = require('./schemas/swagger.json');
-const wordsRouter = require('./routes/wordsRouter');
+
+const housesRouter = require('./routes/housesRouter');
 
 const app = express();
 
 app.use(morgan('dev'));
 app.use(express.json());
 
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerJson));
-app.use('/api/words', wordsRouter);
+app.use('/api/houses', housesRouter);
 
 module.exports = app;
