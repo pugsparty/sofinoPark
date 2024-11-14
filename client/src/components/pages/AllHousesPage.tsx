@@ -1,6 +1,6 @@
 import React from 'react';
 import { Typography, Card, CardMedia, CardContent } from '@mui/material';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 type CottageType = {
   id: number;
