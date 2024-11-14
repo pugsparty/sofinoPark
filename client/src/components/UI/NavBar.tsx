@@ -5,8 +5,17 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Grid2 from '@mui/material/Grid2';
+import { Link } from 'react-router-dom';
 
 export default function NavBar(): React.JSX.Element {
+  const navLinks = [
+    { text: 'О ПОСЕЛКЕ', link: '/area-description' },
+    { text: 'ПРЕИМУЩЕСТВА', link: '/company-description' },
+    { text: 'НАШИ КОТТЕДЖИ', link: '/houses' },
+    { text: 'НАШИ ПРОЕКТЫ', link: '/ready-company-projects' },
+    { text: 'КОНТАКТЫ', link: '/contacts' },
+  ];
+
   return (
     <Box sx={{ flexGrow: 1, borderBottom: '1px solid #ddd' }}>
       <AppBar position="static" elevation={0} sx={{ backgroundColor: 'white', color: '#4a4a4a' }}>
@@ -54,15 +63,17 @@ export default function NavBar(): React.JSX.Element {
 
         <Box sx={{ backgroundColor: 'white', padding: '10px 0', borderTop: '1px solid #ddd' }}>
           <Grid2 container justifyContent="center" spacing={2} component="div">
-            {['О ПОСЕЛКЕ', 'ПРЕИМУЩЕСТВА', 'НАШИ КОТТЕДЖИ', 'НАШИ ПРОЕКТЫ', 'КОНТАКТЫ'].map(
-              (text) => (
-                <Grid2 key={text} component="div">
-                  <Button sx={{ color: '#6e1c3a', fontWeight: 'bold', fontSize: '14px' }}>
-                    {text}
-                  </Button>
-                </Grid2>
-              ),
-            )}
+            {navLinks.map(({ text, link }) => (
+              <Grid2 key={text} component="div">
+                <Button
+                  component={Link}
+                  to={link}
+                  sx={{ color: '#6e1c3a', fontWeight: 'bold', fontSize: '14px' }}
+                >
+                  {text}
+                </Button>
+              </Grid2>
+            ))}
           </Grid2>
         </Box>
       </AppBar>
