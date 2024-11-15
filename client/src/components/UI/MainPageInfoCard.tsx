@@ -1,43 +1,27 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+import React from 'react';
+import { Typography, Card, CardContent } from '@mui/material';
 
-const bull = (
-  <Box component="span" sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}>
-    •
-  </Box>
-);
-
-const card = (
-  <React.Fragment>
-    <CardContent>
-      <Typography gutterBottom sx={{ color: 'text.secondary', fontSize: 14 }}>
-        Word of the Day
-      </Typography>
-      <Typography variant="h5" component="div">
-        be{bull}nev{bull}o{bull}lent
-      </Typography>
-      <Typography sx={{ color: 'text.secondary', mb: 1.5 }}>adjective</Typography>
-      <Typography variant="body2">
-        well meaning and kindly.
-        <br />
-        {'"a benevolent smile"'}
-      </Typography>
-    </CardContent>
-    <CardActions>
-      <Button size="small">Learn More</Button>
-    </CardActions>
-  </React.Fragment>
-);
-
-export default function MainPageInfoCard(): React.JSX.Element {
+export default function MainPageInfoCard({ title }: { title: string }): React.JSX.Element {
   return (
-    <Box sx={{ minWidth: 275 }}>
-      <Card variant="outlined">{card}</Card>
-    </Box>
+    <Card
+      sx={{
+        width: 280,
+        height: 200,
+        backgroundColor: '#fff',
+        borderRadius: '12px',
+        boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.1)',
+        textAlign: 'center',
+        padding: '20px',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+      }}
+    >
+      <CardContent>
+        <Typography variant="h6" sx={{ color: '#6e1c3a', fontWeight: 'bold', fontSize: '16px' }}>
+          {title}
+        </Typography>
+      </CardContent>
+    </Card>
   );
 }
