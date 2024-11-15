@@ -16,8 +16,8 @@
   
   .cottages-grid {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+
+    
   }
   
   .cottage-link {

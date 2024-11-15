@@ -1,6 +1,6 @@
 import React from 'react';
 import img from '../../img/-180.jpeg';
-import  '../../Styles/AreaDescriptionPag.css';
+import  '../../Styles/AreaDescriptionPageStyle.css';
 
 export default function AboutSection(): React.JSX.Element {
   return (
