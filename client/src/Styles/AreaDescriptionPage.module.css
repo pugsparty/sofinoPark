@@ -1,0 +1,28 @@
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.title {
+    font-size: 50px;
+    text-align: center;
+    color: rgb(87, 14, 14);
+}
+
+.wrapper {
+margin-top: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.text{
+    margin-top: 60px; 
+}
+
+.text2{
+    ruby-align: 20px;
+    margin-top: 15px; 
+}

@@ -130,3 +130,4 @@ export default function AllHousesPage(): React.JSX.Element {
     </div>
   );
 }
+
