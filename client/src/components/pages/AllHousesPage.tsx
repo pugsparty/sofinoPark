@@ -2,6 +2,7 @@
 import React from 'react';
 import { Typography, Card, CardMedia, CardContent } from '@mui/material';
 import { Link } from 'react-router-dom';
+import '../../Styles/AllHousesPage.css'
 
 type CottageType = {
   id: number;
@@ -86,33 +87,25 @@ export default function AllHousesPage(): React.JSX.Element {
   ];
 
   return (
-    <div style={{ textAlign: 'center', padding: '20px' }}>
+    <div className="all-houses-container">
       <Typography
         variant="h3"
         component="h1"
         gutterBottom
-        style={{
-          fontWeight: 'bold',
-          fontSize: '3rem',
-          color: '#3f51b5',
-          marginBottom: '30px',
-          letterSpacing: '0.1em',
-          textTransform: 'uppercase',
-          textShadow: '1px 1px 4px rgba(0, 0, 0, 0.3)',
-        }}
+        className="page-title"
       >
         Наши коттеджи
       </Typography>
 
-      <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
+      <div className="cottages-grid">
         {cottages.map((cottage) => (
           <Link
             to={`/house/${cottage.id}`}
             key={cottage.id}
             state={{ cottage }}
-            style={{ textDecoration: 'none', color: 'inherit' }}
+            className="cottage-link"
           >
-            <Card sx={{ maxWidth: 345, margin: 2 }}>
+            <Card className="cottage-card">
               <CardMedia component="img" height="140" image={cottage.photo} alt="Cottage photo" />
               <CardContent>
                 <Typography variant="h6">{cottage.price}</Typography>
@@ -130,4 +123,5 @@ export default function AllHousesPage(): React.JSX.Element {
     </div>
   );
 }
+
 

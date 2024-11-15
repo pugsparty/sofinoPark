@@ -7,6 +7,7 @@ import ContactsPage from './components/pages/ContactsPage';
 import AreaDescriptionPage from './components/pages/AreaDescriptionPage';
 import ReadyCompanyProjects from './components/pages/ReadyCompanyProjects';
 import CompanyDescriptionPage from './components/pages/CompanyDescriptionPage';
+import HousePage from './components/UI/HousePage';
 
 function App(): React.JSX.Element {
   const router = createBrowserRouter([
@@ -20,6 +21,10 @@ function App(): React.JSX.Element {
         {
           path: '/houses',
           element: <AllHousesPage />,
+        },
+        {
+          path: '/house/:id',
+          element: <HousePage />,
         },
         {
           path: '/contacts',
