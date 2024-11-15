@@ -1,0 +1,46 @@
+.inlineCardContainer {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+.horizontalCard {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px 24px;
+  width: 250px;
+  max-width: 250px;
+  text-align: left;
+}
+
+.iconPlaceholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6e1c3a;
+  font-weight: bold;
+  margin-right: 16px;
+  font-size: 18px;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardTitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.cardText {
+  font-size: 14px;
+  color: #666;
+}
