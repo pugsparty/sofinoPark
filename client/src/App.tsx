@@ -8,11 +8,13 @@ import AreaDescriptionPage from './components/pages/AreaDescriptionPage';
 import ReadyCompanyProjects from './components/pages/ReadyCompanyProjects';
 import CompanyDescriptionPage from './components/pages/CompanyDescriptionPage';
 import HousePage from './components/UI/HousePage';
+import ErrorPage from './components/pages/ErrorPage';
 
 function App(): React.JSX.Element {
   const router = createBrowserRouter([
     {
       element: <Layout />,
+      errorElement: <ErrorPage />,
       children: [
         {
           path: '/',
