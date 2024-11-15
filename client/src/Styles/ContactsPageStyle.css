@@ -3,27 +3,86 @@
   padding: 0;
   box-sizing: border-box;
 }
-.containerContacts {
+
+.contactsMainContainer {
   background-color: antiquewhite;
+  padding-top: 20rem;
+  height: 100vh;
+}
+.containerContacts {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 100%;
-  height: 100vh;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
   margin: 0 auto;
-  font-family: Arial, sans-serif;
 }
+
+/* Текстовый контейнер */
+.text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Заголовок контактов */
+.contacts {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Телефон */
+.phone {
+  font-size: 18px;
+  color: #6e1c3a;
+  margin: 10px 0;
+}
+
+/* Email */
+.email {
+  font-size: 18px;
+  color: #6e1c3a;
+  margin: 10px 0;
+}
+
+/* Описание */
+.description {
+  font-size: 16px;
+  color: #555;
+  margin: 10px 0;
+}
+
+/* Форма */
 .form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin: 50px;
+  width: 100%;
 }
-.text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 50px;
+
+/* Поля ввода */
+.form .MuiTextField-root {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* Кнопка */
+.button {
+  background-color: #6e1c3a;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #5a172e;
 }

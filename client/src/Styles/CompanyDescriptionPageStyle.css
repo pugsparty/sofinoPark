@@ -3,11 +3,22 @@
   padding: 0;
   box-sizing: border-box;
 }
+.mainContainer {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: antiquewhite;
+}
 .container {
-    max-width: 100%;
+  max-width: 100%;
   display: flex;
   font-family: Georgia, 'Times New Roman', Times, serif;
   background-color: antiquewhite;
+}
+.titleAdvantages {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 40px;
+  font-weight: bold;
 }
 .svg {
   width: 100px;
@@ -111,12 +122,14 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
   max-width: 100%;
   max-height: 100%;
+  text-align: left;
 }
 .advantagesTitle {
-  text-align: left;
+  /* text-align: left; */
 }
 .advantagesText {
-  text-align: left;
+  /* text-align: left; */
+  font-weight: bold;
 }
 .imgTitle {
   width: 5%;
