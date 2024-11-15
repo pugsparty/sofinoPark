@@ -18,7 +18,7 @@ export default function NavBar(): React.JSX.Element {
 
   return (
     <Box sx={{ flexGrow: 1, borderBottom: '1px solid #ddd' }}>
-      <AppBar position="static" elevation={0} sx={{ color: '#4a4a4a', backgroundColor: '#fff6e4' }}>
+      <AppBar position="static" elevation={0} sx={{ color: '#4a4a4a', backgroundColor: '#fff' }}>
         <Toolbar sx={{ justifyContent: 'space-between', padding: '10px 40px' }}>
           <div style={{ textAlign: 'left', minWidth: '250px' }}>
             <Typography
@@ -65,7 +65,7 @@ export default function NavBar(): React.JSX.Element {
           </div>
         </Toolbar>
 
-        <Box sx={{ backgroundColor: '#fff6e4', padding: '10px 0', borderTop: '1px solid #ddd' }}>
+        <Box sx={{ backgroundColor: '#fff', padding: '10px 0', borderTop: '1px solid #ddd' }}>
           <Grid2 container justifyContent="center" spacing={2} component="div">
             {navLinks.map(({ text, link }) => (
               <Grid2 key={text} component="div">
