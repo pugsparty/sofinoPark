@@ -23,25 +23,30 @@
   .cottage-link {
     text-decoration: none;
     color: inherit;
-    transition: color 0.3s; /* Плавное изменение цвета */
+    transition: color 0.3s; 
   }
   
   .cottage-link:hover {
-    color: #3498db; /* Новый цвет текста при наведении */
-    text-decoration: underline; /* Подчеркивание при наведении */
+    color: #3498db;
+    text-decoration: underline;
   }
   
   .cottage-card {
     text-decoration: none;
     color: inherit;
-    border: 2px solid transparent; /* Изначально без видимой границы */
-    border-radius: 8px; /* Скругление углов */
-    transition: border-color 0.3s, box-shadow 0.3s; /* Плавный переход */
+    border: 2px solid transparent; 
+    border-radius: 8px; 
+    transition: border-color 0.3s, color 0.3s, box-shadow 0.3s; 
+    margin: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
   }
   
   .cottage-card:hover {
-    border-color: #510505; /* Цвет рамки при наведении */
-    box-shadow: 8px 18px 8px 18px rgba(116, 29, 29, 0.2); /* Тень при наведении */
-    margin: 20px;
+    border-color: #4a050a; 
+    box-shadow: 0 10px 16px rgba(15, 5, 15, 5); 
+  }
+  
+  .cottage-card:hover * {
+    color: #770808; 
   }
   
