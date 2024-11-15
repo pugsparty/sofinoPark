@@ -1,32 +1,6 @@
 import * as React from 'react';
-import { Container, Box, Typography, Button, Card, CardContent } from '@mui/material';
-
-const MainPageInfoCard = ({ title, description }: { title: string; description: string }) => (
-  <Card
-    sx={{
-      width: 280,
-      height: 200,
-      backgroundColor: '#fff',
-      borderRadius: '12px',
-      boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.1)',
-      textAlign: 'center',
-      padding: '20px',
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-    }}
-  >
-    <CardContent>
-      <Typography variant="h6" sx={{ color: '#6e1c3a', fontWeight: 'bold', fontSize: '16px' }}>
-        {title}
-      </Typography>
-      <Typography variant="body2" color="text.secondary" sx={{ marginTop: '10px' }}>
-        {description}
-      </Typography>
-    </CardContent>
-  </Card>
-);
-
+import { Container, Box, Typography, Button } from '@mui/material';
+import MainPageInfoCard from '../UI/MainPageInfoCard';
 export default function MainPage(): React.JSX.Element {
   return (
     <Box
@@ -66,7 +40,6 @@ export default function MainPage(): React.JSX.Element {
         </Button>
       </Container>
 
-      {/* Карточки с преимуществами */}
       <Container
         maxWidth="lg"
         sx={{
@@ -77,19 +50,10 @@ export default function MainPage(): React.JSX.Element {
           marginTop: '40px',
         }}
       >
-        <MainPageInfoCard title="Ключи от готового дома через 6 месяцев." description="" />
-        <MainPageInfoCard
-          title="Участки с домами по цене от 15.2 млн. Для первых покупателей стоимость от 14.4 млн."
-          description=""
-        />
-        <MainPageInfoCard
-          title="Акции на старте продаж на участки и коттеджи от застройщика. Заморозили для вас цены 2023 года."
-          description=""
-        />
-        <MainPageInfoCard
-          title="Московская прописка дает право на дополнительные социальные прибавки и различные льготы и выплаты, детские пособия."
-          description=""
-        />
+        <MainPageInfoCard title="Ключи от готового дома через 6 месяцев." />
+        <MainPageInfoCard title="Участки с домами по цене от 15.2 млн. Для первых покупателей стоимость от 14.4 млн." />
+        <MainPageInfoCard title="Акции на старте продаж на участки и коттеджи от застройщика. Заморозили для вас цены 2023 года." />
+        <MainPageInfoCard title="Московская прописка дает право на дополнительные социальные прибавки и различные льготы и выплаты, детские пособия." />
       </Container>
     </Box>
   );

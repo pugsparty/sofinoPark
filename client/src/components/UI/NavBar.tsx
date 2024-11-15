@@ -19,8 +19,8 @@ export default function NavBar(): React.JSX.Element {
   return (
     <Box sx={{ flexGrow: 1, borderBottom: '1px solid #ddd' }}>
       <AppBar position="static" elevation={0} sx={{ backgroundColor: 'white', color: '#4a4a4a' }}>
-        <Toolbar sx={{ justifyContent: 'center', gap: '10vw', padding: '10px 40px' }}>
-          <div style={{ textAlign: 'left', minWidth: '4wh' }}>
+        <Toolbar sx={{ justifyContent: 'space-between', padding: '10px 40px' }}>
+          <div style={{ textAlign: 'left', minWidth: '250px' }}>
             <Typography
               variant="body1"
               sx={{ color: '#6e1c3a', fontSize: '16px', fontWeight: 'bold' }}
@@ -34,7 +34,6 @@ export default function NavBar(): React.JSX.Element {
               идеальный дом вашей мечты!
             </Typography>
           </div>
-          
 
           <Typography
             variant="h4"
@@ -51,18 +50,19 @@ export default function NavBar(): React.JSX.Element {
           >
             «Софьино Парк»
           </Typography>
-
-          <Box sx={{ textAlign: 'right', minWidth: '4wh' }}>
-            <Typography
-              variant="body1"
-              sx={{ color: '#6e1c3a', fontSize: '16px', fontWeight: 'bold' }}
-            >
-              +7 (915) 141-97-77
-            </Typography>
-            <Typography variant="body1" sx={{ color: '#2e4d39', fontSize: '16px' }}>
-              sofinopark@yandex.ru
-            </Typography>
-          </Box>
+          <div style={{ minWidth: '250px' }}>
+            <Box sx={{ textAlign: 'right', minWidth: '4wh' }}>
+              <Typography
+                variant="body1"
+                sx={{ color: '#6e1c3a', fontSize: '16px', fontWeight: 'bold' }}
+              >
+                +7 (915) 141-97-77
+              </Typography>
+              <Typography variant="body1" sx={{ color: '#2e4d39', fontSize: '16px' }}>
+                sofinopark@yandex.ru
+              </Typography>
+            </Box>
+          </div>
         </Toolbar>
 
         <Box sx={{ backgroundColor: 'white', padding: '10px 0', borderTop: '1px solid #ddd' }}>
