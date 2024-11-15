@@ -3,12 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-.container {
+.containerContacts {
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 1440px;
   height: 100vh;
-  background-color: #f2f2f2;
+  margin: 0 auto;
   font-family: Arial, sans-serif;
 }
 .form {
@@ -17,7 +18,6 @@
   align-items: center;
   justify-content: center;
   margin: 50px;
-  
 }
 .text {
   display: flex;
