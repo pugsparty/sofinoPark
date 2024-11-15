@@ -1,4 +1,4 @@
-img {
+.img {
     display: block;
     max-width: 100%;
 }
@@ -11,6 +11,8 @@ img {
 
 .wrapper {
 margin-top: 30px;
+height: 100vh;
+max-width: 1440px;
 }
 
 .content {

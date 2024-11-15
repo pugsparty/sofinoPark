@@ -1,0 +1,52 @@
+.all-houses-container {
+    height:100vh;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .page-title {
+    font-weight: bold;
+    font-size: 3rem;
+    color: #5d0f0f;
+    margin-bottom: 30px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .cottages-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .cottage-link {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s; 
+  }
+  
+  .cottage-link:hover {
+    color: #3498db;
+    text-decoration: underline;
+  }
+  
+  .cottage-card {
+    text-decoration: none;
+    color: inherit;
+    border: 2px solid transparent; 
+    border-radius: 8px; 
+    transition: border-color 0.3s, color 0.3s, box-shadow 0.3s; 
+    margin: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .cottage-card:hover {
+    border-color: #4a050a; 
+    box-shadow: 0 10px 16px rgba(15, 5, 15, 5); 
+  }
+  
+  .cottage-card:hover * {
+    color: #770808; 
+  }
+  
