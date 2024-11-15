@@ -1,0 +1,13 @@
+.footerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6e1c3a;
+  color: #fff;
+  height: 70px;
+  font-size: 12px;
+  padding: 0 500px;
+}
+.footer {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
