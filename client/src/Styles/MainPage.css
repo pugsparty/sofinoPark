@@ -1,0 +1,53 @@
+/* MainPage.css */
+
+.mainPageContainer {
+  min-height: 100vh;
+  color: #6e1c3a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4em;
+}
+
+.mainPageContainer .mainPageContent {
+  text-align: center;
+}
+
+.mainPageContainer .mainPageTitle {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.mainPageContainer .mainPageSubtitle {
+  font-size: 1.25rem;
+  margin-bottom: 1em;
+}
+
+.mainPageContainer .mainPageContentTitle {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+.mainPageContainer .cardContainer {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+  padding: 20px;
+  z-index: 1;
+}
+
+.mainPageContainer .mainPageBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  background-image: url('../../public/assets/infoBackground.jpeg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  z-index: -1;
+}

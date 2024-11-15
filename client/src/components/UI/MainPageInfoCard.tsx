@@ -1,25 +1,22 @@
 import React from 'react';
 import { Typography, Card, CardContent } from '@mui/material';
+import '../../Styles/MainPageInfoCard.css';
 
-export default function MainPageInfoCard({ title }: { title: string }): React.JSX.Element {
+export default function MainPageInfoCard({
+  title,
+  description,
+}: {
+  title: string;
+  description: string;
+}): React.JSX.Element {
   return (
-    <Card
-      sx={{
-        width: 280,
-        height: 200,
-        backgroundColor: '#fff',
-        borderRadius: '12px',
-        boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.1)',
-        textAlign: 'center',
-        padding: '20px',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-      }}
-    >
+    <Card className="cardComponent">
       <CardContent>
-        <Typography variant="h6" sx={{ color: '#6e1c3a', fontWeight: 'bold', fontSize: '16px' }}>
+        <Typography variant="h6" className="cardTitle">
           {title}
+        </Typography>
+        <Typography variant="body2" className="cardDescription">
+          {description}
         </Typography>
       </CardContent>
     </Card>
