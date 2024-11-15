@@ -4,8 +4,10 @@
   box-sizing: border-box;
 }
 .container {
+    max-width: 100%;
   display: flex;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: antiquewhite;
 }
 .svg {
   width: 100px;
