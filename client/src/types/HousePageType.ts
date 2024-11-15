@@ -5,3 +5,6 @@ export type CottageType = {
   area: string;
   description: string;
 };
+export type HousePageProps = {
+  cottage: CottageType;
+};

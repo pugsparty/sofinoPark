@@ -9,7 +9,7 @@ import '../../Styles/CompanyDescriptionPageStyle.css';
 export default function CompanyDescriptionPage(): React.JSX.Element {
   return (
     <>
-      <div className='mainContainer'>
+      <div className="mainContainer">
         <h1 className="titleAdvantages">ПРЕИМУЩЕСТВА РАБОТЫ С НАМИ</h1>
         <div className="container">
           <div className="imgContainer">
@@ -43,10 +43,12 @@ export default function CompanyDescriptionPage(): React.JSX.Element {
             <h2>Стоимость земли без подряда 800 тыс руб/сотка (строитесь самостоятельно)</h2>
             <br></br>
             <span>
-              <img src={svg4}></img>при бронировании участка с подрядом - проект коттеджа в подарок
+              <img className="imgSpan" src={svg4}></img>при бронировании участка с подрядом - проект
+              коттеджа в подарок
             </span>
             <span>
-              <img src={svg4}></img>строительство коттеджа возможно по своему проекту
+              <img className="imgSpan" src={svg4}></img>строительство коттеджа возможно по своему
+              проекту
             </span>
             <img className="imgWithoutPodryad" src={svg5}></img>
           </div>

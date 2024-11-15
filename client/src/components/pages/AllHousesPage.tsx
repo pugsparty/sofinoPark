@@ -2,15 +2,8 @@
 import React from 'react';
 import { Typography, Card, CardMedia, CardContent } from '@mui/material';
 import { Link } from 'react-router-dom';
-import '../../Styles/AllHousesPage.css'
-
-type CottageType = {
-  id: number;
-  photo: string;
-  price: string;
-  area: string;
-  description: string;
-};
+import '../../Styles/AllHousesPage.css';
+import type { CottageType } from '../../types/HousePageType';
 
 export default function AllHousesPage(): React.JSX.Element {
   const cottages: CottageType[] = [
@@ -88,12 +81,7 @@ export default function AllHousesPage(): React.JSX.Element {
 
   return (
     <div className="all-houses-container">
-      <Typography
-        variant="h3"
-        component="h1"
-        gutterBottom
-        className="page-title"
-      >
+      <Typography variant="h3" component="h1" gutterBottom className="page-title">
         Наши коттеджи
       </Typography>
 
@@ -123,5 +111,3 @@ export default function AllHousesPage(): React.JSX.Element {
     </div>
   );
 }
-
-

@@ -1,18 +1,12 @@
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import '../../Styles/HousePage.css';
-
-type CottageType = {
-  id: number;
-  photo: string;
-  price: string;
-  area: string;
-  description: string;
-};
+import type { HousePageProps } from '../../types/HousePageType';
 
 export default function HousePage(): React.JSX.Element {
   const location = useLocation();
-  const cottage = location.state?.cottage as CottageType;
+  const cottage = location.state?.cottage as HousePageProps['cottage'];
 
   return (
     <div className="house-page-container">
