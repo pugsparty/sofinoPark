@@ -1,6 +1,6 @@
 .inlineCardContainer {
   display: flex;
-  gap: 24px;
+  gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
   padding: 20px 0;
@@ -16,6 +16,9 @@
   width: 250px;
   max-width: 250px;
   text-align: left;
+  transition:
+    background-color 0.5s,
+    color 0.5s;
 }
 
 .iconPlaceholder {
@@ -26,6 +29,7 @@
   font-weight: bold;
   margin-right: 16px;
   font-size: 18px;
+  transition: color 0.5s;
 }
 
 .cardContent {
@@ -38,9 +42,22 @@
   font-weight: bold;
   color: #333;
   margin: 0;
+  transition: color 0.5s;
 }
 
 .cardText {
   font-size: 14px;
   color: #666;
+  transition: color 0.5s;
+}
+
+/* Hover effect */
+.horizontalCard:hover {
+  background-color: #6e1c3a;
+}
+
+.horizontalCard:hover .iconPlaceholder,
+.horizontalCard:hover .cardTitle,
+.horizontalCard:hover .cardText {
+  color: white; /* Set to white for readability on the dark background */
 }
