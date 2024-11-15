@@ -1,4 +1,5 @@
 .all-houses-container {
+    height:100vh;
     text-align: center;
     padding: 20px;
   }
@@ -6,7 +7,7 @@
   .page-title {
     font-weight: bold;
     font-size: 3rem;
-    color: #3f51b5;
+    color: #5d0f0f;
     margin-bottom: 30px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -22,10 +23,25 @@
   .cottage-link {
     text-decoration: none;
     color: inherit;
+    transition: color 0.3s; /* Плавное изменение цвета */
+  }
+  
+  .cottage-link:hover {
+    color: #3498db; /* Новый цвет текста при наведении */
+    text-decoration: underline; /* Подчеркивание при наведении */
   }
   
   .cottage-card {
-    max-width: 345px;
-    margin: 8px;
+    text-decoration: none;
+    color: inherit;
+    border: 2px solid transparent; /* Изначально без видимой границы */
+    border-radius: 8px; /* Скругление углов */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Плавный переход */
+  }
+  
+  .cottage-card:hover {
+    border-color: #510505; /* Цвет рамки при наведении */
+    box-shadow: 8px 18px 8px 18px rgba(116, 29, 29, 0.2); /* Тень при наведении */
+    margin: 20px;
   }
   
